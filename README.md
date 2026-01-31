@@ -7,48 +7,30 @@ Domain: Java Programming
 Duration: 4 Weeks
 Mentor: Neela Santosh
 
-Description of the Task
+This project was developed as part of my internship at CodTech IT Solutions in the Java Programming domain.
+The objective of this task was to design and implement an AI-based recommendation system that can suggest products to users based on the preferences and ratings of other similar users.
 
-This project implements a basic recommendation system using Java collections. The goal of the task is to simulate how online platforms like shopping websites or streaming services suggest products or content to users based on preferences of similar users.
+The system follows a Collaborative Filtering approach, which is a common technique used in real-world recommendation engines such as those found in e-commerce and streaming platforms. Instead of using fixed rules, the program analyzes historical user-item ratings and applies mathematical similarity calculations to predict which items a particular user is most likely to enjoy.
 
-In this program, a set of predefined users and the items they like are stored using a HashMap. Each user is associated with a list of products such as laptops, smartphones, cameras, smartwatches, and headphones. When a user enters their name, the system analyzes what other users like and recommends items that the current user has not yet liked.
+Cosine similarity is used to measure how close two users are in terms of their interests. Based on this similarity score, the system weights the opinions of similar users more heavily and generates personalized recommendations. This makes the solution data-driven and adaptive, reflecting core principles of artificial intelligence and machine learning.
 
-The project focuses on applying core Java concepts such as:
+What the Program Does
 
-HashMap and HashSet
+Stores user–item ratings in memory
 
-ArrayList
+Builds a user preference matrix
 
-Iteration using loops
+Calculates similarity between users using cosine similarity
 
-Scanner class for input
+Applies collaborative filtering to predict unseen item ratings
 
-Conditional logic
+Generates personalized recommendations
 
-Set-based filtering to avoid duplicate recommendations
+Sorts recommendations based on predicted preference scores
 
-This recommendation model is rule-based and very simple, but it clearly demonstrates the basic working principle behind collaborative filtering systems used in real-world applications.
-
- What the Program Does
-
-Stores sample data of users and their liked products.
-
-Takes a username as input from the console.
-
-Validates whether the entered user exists.
-
-Retrieves the list of items liked by that user.
-
-Compares preferences with other users.
-
-Finds new items that the current user has not liked yet.
-
-Displays those items as recommendations.
-
-Avoids duplicates using a HashSet.
-
-Shows a friendly message if no recommendations are available.
+Displays the final suggested products for the selected user
 
 OutPut:
 
-<img width="1270" height="735" alt="image" src="https://github.com/user-attachments/assets/fc7fe8e7-ff1d-4e02-8530-9bf5adf5de15" />
+<img width="1256" height="668" alt="image" src="https://github.com/user-attachments/assets/1bfeb4bf-f11f-4d00-bf38-9a3e8ace2678" />
+
